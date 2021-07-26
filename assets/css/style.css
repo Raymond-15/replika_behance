@@ -1,6 +1,7 @@
 .pad-nav {
   padding-left: 26px;
   padding-right: 26px;
+  height: 55px;
 }
 
 .garba {
@@ -15,35 +16,48 @@
   margin-bottom: 6px;
 }
 
-.nav-link:hover::after {
-  content: "";
-  display: block;
-  border-bottom: 2px solid #000;
-  padding-bottom: 5px;
-  margin-bottom: -8px;
+.warna {
+  color: #000;
 }
 
-.tombol_search {
-  width: 50px;
-  height: 30px;
+.tomSearch {
+  top: 10px;
+  background-color: #ffffff00;
+  border: none;
   border-radius: 50px;
+  height: 31px;
+  padding: 1px 12px;
+  text-decoration: none;
+  text-align: center;
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+  display: inline-block;
+  font-size: 14px;
+  /* height: 12px; */
+  position: relative;
 }
 
 .lengkung {
   border-radius: 50px;
+  font-weight: bolder;
+}
+
+.btn-outline-secondary:hover {
+  background-color: #ecebeb;
+}
+
+.tombol-nav {
+  width: 80px;
+  height: 44px;
 }
 
 #adobe {
   width: 60px;
 }
 
-#search {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: large;
-}
-
 input[type="text"] {
-  width: 100%;
+  /* width: auto; */
   box-sizing: border-box;
   border: 2px solid #ccc;
   border-radius: 50px 5px 5px 50px;
@@ -52,15 +66,75 @@ input[type="text"] {
   /* background-image: url("../img/icon/searchmagnifi.png"); */
   background-position: 10px 10px;
   background-repeat: no-repeat;
-  padding: 12px 20px 12px 40px;
+  padding: 6px 14px 6px 24px;
   -webkit-transition: width 0.4s ease-in-out;
   transition: width 0.4s ease-in-out;
 }
 
-.pencarian form {
-  border: 1px solid rgb(110, 110, 110);
-  height: 63px;
-  margin: 20px;
-  border-radius: 90px;
-  background-color: rgb(241, 241, 241);
+#search {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  font-weight: bolder;
+  background-color: rgb(247, 247, 247);
+}
+
+@media (min-width: 992px) {
+  .nav-link:hover::after {
+    content: "";
+    display: block;
+    border-bottom: 2px solid #000;
+    padding-bottom: 5px;
+    margin-bottom: -8px;
+  }
+
+  .tomSearch:hover {
+    background-color: #ecebeb;
+  }
+
+  .pencarian form {
+    position: fixed;
+    top: 75px;
+    border: 1px solid rgb(110, 110, 110);
+    height: 53px;
+    width: 1326px;
+    left: 18px;
+    border-radius: 50px;
+    background-color: rgb(255, 255, 255);
+  }
+
+  .aktif {
+    background-color: black;
+    color: white;
+  }
+}
+
+@media (max-width: 576px) {
+  .pencarian form {
+    position: fixed;
+    top: 75px;
+    border: 1px solid rgb(110, 110, 110);
+    height: 53px;
+    width: 400px;
+    left: 18px;
+    border-radius: 50px;
+    background-color: rgb(255, 255, 255);
+  }
+  input[type="text"] {
+    width: 250px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 50px 5px 5px 50px;
+    font-size: 16px;
+    background-color: white;
+    /* background-image: url("../img/icon/searchmagnifi.png"); */
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    padding: 6px 14px 6px 24px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+  }
+
+  /* nav.logo {
+    src: url("assets/img/behance-logo-b&w.png");
+  } */
 }
