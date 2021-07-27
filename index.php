@@ -20,11 +20,11 @@
 </head>
 
 <body>
-  <section class=" fixed-top">
+  <section class="fixed-top">
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light pad-nav">
-      <a class="navbar-brand" href="#"><img src="assets/img/Behance_logo.png" class="logo" alt="" /></a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white pad-nav">
+      <a class="navbar-brand" title="Behance" href="#"><img src="assets/img/Behance_logo.png" class="logo" alt="" /></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
@@ -41,10 +41,10 @@
         </ul>
         <ul class="navbar-nav ml-auto">
           <li class="nav-item pl-3">
-            <a class="btn btn-outline-secondary text-body btn-sm lengkung" href="#" role="button">Log In</a>
+            <a class="btn text-body tomNav lengkung" href="#" role="button">Log In</a>
           </li>
           <li class="nav-item pl-3">
-            <a class="btn btn-primary btn-sm lengkung" href="#">Sign Up</a>
+            <a class="btn text-white tomNav-s lengkung" href="#">Sign Up</a>
           </li>
           <li class="pl-3 ml-4">
             <a href="#">
@@ -56,26 +56,508 @@
     </nav>
     <!-- Akhir Nav -->
 
-    <!-- header -->
-    <div class="mt-4 pencarian row-lg">
-      <form class="input-group">
-        <input id="search" type="text" class="col-lg" name="search" placeholder="Search the creative world at work" />
-        <button class="tomSearch ml-3" type="button">Projects</button>
-        <button class="tomSearch ml-2" type="button">Images</button>
-        <button class="tomSearch ml-2" type="button">Prototypes</button>
-        <button class="tomSearch ml-2" type="button">People</button>
-        <button class="tomSearch ml-2 mr-3" type="button">Moodboards</button>
-      </form>
+    <div class="jumbotron bg-white border-top border-bottom">
+      <!-- header -->
+      <div class="mt-4 pencarian row-lg">
+        <form class="input-group">
+          <i class="fas fa-search fa-lg icon-cari"></i>
+          <input id="search" type="text" class="col-lg border-right" name="search" placeholder="Search the creative world at work" />
+          <button class="btn tomSearch-active ml-3" type="button">Projects</button>
+          <button class="btn tomSearch ml-2" type="button">Images</button>
+          <button class="btn tomSearch ml-2" type="button">Prototypes</button>
+          <button class="btn tomSearch ml-2" type="button">People</button>
+          <button class="btn tomSearch ml-2 mr-3" type="button">Moodboards</button>
+        </form>
 
+      </div>
+      <!-- akhir header -->
+
+      <div class="mt-4 row-lg sorting">
+        <form class="input-group"></form>
+        <button class="btn tomGar text-body font-weight-bold dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown">
+          <i class="fab fa-creative-commons-remix mr-2"></i>Creative Fields</button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+        <button class="btn tomGar text-body ml-2 font-weight-bold dropdown-toggle"><i class="fas fa-tools mr-2"></i>Tools</button>
+        <button class="btn tomGar text-body ml-2 font-weight-bold dropdown-toggle"><i class="fas fa-palette mr-2"></i>Color</button>
+        <button class="btn tomGar text-body ml-2 font-weight-bold dropdown-toggle"><i class="fas fa-map-marker-alt mr-2"></i>Location</button>
+        <button class="btn tomGar text-body ml-2 font-weight-bold dropdown-toggle"><i class="fas fa-graduation-cap mr-2"></i>Schools</button>
+      </div>
     </div>
-    <!-- akhir header -->
-
-    <!-- <div class="row-lg">
-      <button></button>
-    </div> -->
 
   </section>
 
+  <!-- <section>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-bottom pad-nav">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Features</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Pricing</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#">Disabled</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </section> -->
+
+  <div class="grid-container">
+
+    <!-- content1 -->
+    <span class="menu1">
+      <div class="card" style="width: 314px;">
+        <div class="isi-konten">
+          <img class="card-img-top" title="Link to project" src="assets/img/NGC.jpg" alt="Card image cap">
+        </div>
+        <div class="row">
+          <div class="col-lg-7 mt-2">
+            <span>
+              <a href="#" class="card-text">River Plate</a>
+              <p class="owners">Multiple owners<i class="fas fa-caret-down ml-2"></i></p>
+            </span>
+          </div>
+          <div class="col-lg-5 mt-2">
+            <span class="d-flex justify-content-end">
+              <span>
+                <i class="fas fa-thumbs-up fa-xs"></i>
+                <span class="desk">254</span>
+              </span>
+              <span class="ml-3">
+                <i class="fas fa-eye fa-xs"></i>
+                <span class="desk">1k</span>
+              </span>
+            </span>
+          </div>
+          <div class="overlay">
+            <a href="" class="icon">
+              <button class="btn btn-sm tomOver"><i class="fas fa-save mr-2"></i>Save</button>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </span>
+    <!-- akhirContent1 -->
+
+    <!-- content2 -->
+    <span class="menu2">
+      <div class="card" style="width: 314px;">
+        <div class="konten">
+          <img class="card-img-top" title="Link to project" src="assets/img/NGC.jpg" alt="Card image cap">
+        </div>
+        <div class="row">
+          <div class="col-lg-7 mt-2">
+            <span>
+              <a href="#" class="card-text">River Plate</a>
+              <p class="owners">Multiple owners<i class="fas fa-caret-down ml-2"></i></p>
+            </span>
+          </div>
+          <div class="col-lg-5 mt-2">
+            <span class="d-flex justify-content-end">
+              <span>
+                <i class="fas fa-thumbs-up fa-xs"></i>
+                <span class="desk">254</span>
+              </span>
+              <span class="ml-3">
+                <i class="fas fa-eye fa-xs"></i>
+                <span class="desk">1k</span>
+              </span>
+            </span>
+          </div>
+          <div class="overlay">
+            <a href="" class="icon">
+              <button class="btn btn-sm tomOver"><i class="fas fa-save mr-2"></i>Save</button>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </span>
+    <!-- akhirContent2 -->
+
+    <!-- content3 -->
+    <span class="menu3">
+      <div class="card" style="width: 314px;">
+        <div class="konten">
+          <img class="card-img-top" title="Link to project" src="assets/img/NGC.jpg" alt="Card image cap">
+        </div>
+        <div class="row">
+          <div class="col-lg-7 mt-2">
+            <span>
+              <a href="#" class="card-text">River Plate</a>
+              <p class="owners">Multiple owners<i class="fas fa-caret-down ml-2"></i></p>
+            </span>
+          </div>
+          <div class="col-lg-5 mt-2">
+            <span class="d-flex justify-content-end">
+              <span>
+                <i class="fas fa-thumbs-up fa-xs"></i>
+                <span class="desk">254</span>
+              </span>
+              <span class="ml-3">
+                <i class="fas fa-eye fa-xs"></i>
+                <span class="desk">1k</span>
+              </span>
+            </span>
+          </div>
+          <div class="overlay">
+            <a href="" class="icon">
+              <button class="btn btn-sm tomOver"><i class="fas fa-save mr-2"></i>Save</button>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </span>
+    <!-- akhirContent3 -->
+
+    <!-- content4 -->
+    <span class="menu4">
+      <div class="card" style="width: 314px;">
+        <div class="konten">
+          <img class="card-img-top" title="Link to project" src="assets/img/NGC.jpg" alt="Card image cap">
+        </div>
+        <div class="row">
+          <div class="col-lg-7 mt-2">
+            <span>
+              <a href="#" class="card-text">River Plate</a>
+              <p class="owners">Multiple owners<i class="fas fa-caret-down ml-2"></i></p>
+            </span>
+          </div>
+          <div class="col-lg-5 mt-2">
+            <span class="d-flex justify-content-end">
+              <span>
+                <i class="fas fa-thumbs-up fa-xs"></i>
+                <span class="desk">254</span>
+              </span>
+              <span class="ml-3">
+                <i class="fas fa-eye fa-xs"></i>
+                <span class="desk">1k</span>
+              </span>
+            </span>
+          </div>
+          <div class="overlay">
+            <a href="" class="icon">
+              <button class="btn btn-sm tomOver"><i class="fas fa-save mr-2"></i>Save</button>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </span>
+    <!-- akhirContent4 -->
+
+  </div>
+
+  <div class="grid-container">
+
+    <!-- content1 -->
+    <span class="menu1">
+      <div class="card" style="width: 314px;">
+        <div class="konten">
+          <img class="card-img-top" title="Link to project" src="assets/img/NGC.jpg" alt="Card image cap">
+        </div>
+        <div class="row">
+          <div class="col-lg-7 mt-2">
+            <span>
+              <a href="#" class="card-text">River Plate</a>
+              <p class="owners">Multiple owners<i class="fas fa-caret-down ml-2"></i></p>
+            </span>
+          </div>
+          <div class="col-lg-5 mt-2">
+            <span class="d-flex justify-content-end">
+              <span>
+                <i class="fas fa-thumbs-up fa-xs"></i>
+                <span class="desk">254</span>
+              </span>
+              <span class="ml-3">
+                <i class="fas fa-eye fa-xs"></i>
+                <span class="desk">1k</span>
+              </span>
+            </span>
+          </div>
+          <div class="overlay">
+            <a href="" class="icon">
+              <button class="btn btn-sm tomOver"><i class="fas fa-save mr-2"></i>Save</button>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </span>
+    <!-- akhirContent1 -->
+
+    <!-- content2 -->
+    <span class="menu2">
+      <div class="card" style="width: 314px;">
+        <div class="konten">
+          <img class="card-img-top" title="Link to project" src="assets/img/NGC.jpg" alt="Card image cap">
+        </div>
+        <div class="row">
+          <div class="col-lg-7 mt-2">
+            <span>
+              <a href="#" class="card-text">River Plate</a>
+              <p class="owners">Multiple owners<i class="fas fa-caret-down ml-2"></i></p>
+            </span>
+          </div>
+          <div class="col-lg-5 mt-2">
+            <span class="d-flex justify-content-end">
+              <span>
+                <i class="fas fa-thumbs-up fa-xs"></i>
+                <span class="desk">254</span>
+              </span>
+              <span class="ml-3">
+                <i class="fas fa-eye fa-xs"></i>
+                <span class="desk">1k</span>
+              </span>
+            </span>
+          </div>
+          <div class="overlay">
+            <a href="" class="icon">
+              <button class="btn btn-sm tomOver"><i class="fas fa-save mr-2"></i>Save</button>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </span>
+    <!-- akhirContent2 -->
+
+    <!-- content3 -->
+    <span class="menu3">
+      <div class="card" style="width: 314px;">
+        <div class="konten">
+          <img class="card-img-top" title="Link to project" src="assets/img/NGC.jpg" alt="Card image cap">
+        </div>
+        <div class="row">
+          <div class="col-lg-7 mt-2">
+            <span>
+              <a href="#" class="card-text">River Plate</a>
+              <p class="owners">Multiple owners<i class="fas fa-caret-down ml-2"></i></p>
+            </span>
+          </div>
+          <div class="col-lg-5 mt-2">
+            <span class="d-flex justify-content-end">
+              <span>
+                <i class="fas fa-thumbs-up fa-xs"></i>
+                <span class="desk">254</span>
+              </span>
+              <span class="ml-3">
+                <i class="fas fa-eye fa-xs"></i>
+                <span class="desk">1k</span>
+              </span>
+            </span>
+          </div>
+          <div class="overlay">
+            <a href="" class="icon">
+              <button class="btn btn-sm tomOver"><i class="fas fa-save mr-2"></i>Save</button>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </span>
+    <!-- akhirContent3 -->
+
+    <!-- content4 -->
+    <span class="menu4">
+      <div class="card" style="width: 314px;">
+        <div class="konten">
+          <img class="card-img-top" title="Link to project" src="assets/img/NGC.jpg" alt="Card image cap">
+        </div>
+        <div class="row">
+          <div class="col-lg-7 mt-2">
+            <span>
+              <a href="#" class="card-text">River Plate</a>
+              <p class="owners">Multiple owners<i class="fas fa-caret-down ml-2"></i></p>
+            </span>
+          </div>
+          <div class="col-lg-5 mt-2">
+            <span class="d-flex justify-content-end">
+              <span>
+                <i class="fas fa-thumbs-up fa-xs"></i>
+                <span class="desk">254</span>
+              </span>
+              <span class="ml-3">
+                <i class="fas fa-eye fa-xs"></i>
+                <span class="desk">1k</span>
+              </span>
+            </span>
+          </div>
+          <div class="overlay">
+            <a href="" class="icon">
+              <button class="btn btn-sm tomOver"><i class="fas fa-save mr-2"></i>Save</button>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </span>
+    <!-- akhirContent4 -->
+
+  </div>
+
+  <div class="grid-container">
+
+    <!-- content1 -->
+    <span class="menu1">
+      <div class="card" style="width: 314px;">
+        <div class="konten">
+          <img class="card-img-top" title="Link to project" src="assets/img/NGC.jpg" alt="Card image cap">
+        </div>
+        <div class="row">
+          <div class="col-lg-7 mt-2">
+            <span>
+              <a href="#" class="card-text">River Plate</a>
+              <p class="owners">Multiple owners<i class="fas fa-caret-down ml-2"></i></p>
+            </span>
+          </div>
+          <div class="col-lg-5 mt-2">
+            <span class="d-flex justify-content-end">
+              <span>
+                <i class="fas fa-thumbs-up fa-xs"></i>
+                <span class="desk">254</span>
+              </span>
+              <span class="ml-3">
+                <i class="fas fa-eye fa-xs"></i>
+                <span class="desk">1k</span>
+              </span>
+            </span>
+          </div>
+          <div class="overlay">
+            <a href="" class="icon">
+              <button class="btn btn-sm tomOver"><i class="fas fa-save mr-2"></i>Save</button>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </span>
+    <!-- akhirContent1 -->
+
+    <!-- content2 -->
+    <span class="menu2">
+      <div class="card" style="width: 314px;">
+        <div class="konten">
+          <img class="card-img-top" title="Link to project" src="assets/img/NGC.jpg" alt="Card image cap">
+        </div>
+        <div class="row">
+          <div class="col-lg-7 mt-2">
+            <span>
+              <a href="#" class="card-text">River Plate</a>
+              <p class="owners">Multiple owners<i class="fas fa-caret-down ml-2"></i></p>
+            </span>
+          </div>
+          <div class="col-lg-5 mt-2">
+            <span class="d-flex justify-content-end">
+              <span>
+                <i class="fas fa-thumbs-up fa-xs"></i>
+                <span class="desk">254</span>
+              </span>
+              <span class="ml-3">
+                <i class="fas fa-eye fa-xs"></i>
+                <span class="desk">1k</span>
+              </span>
+            </span>
+          </div>
+          <div class="overlay">
+            <a href="" class="icon">
+              <button class="btn btn-sm tomOver"><i class="fas fa-save mr-2"></i>Save</button>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </span>
+    <!-- akhirContent2 -->
+
+    <!-- content3 -->
+    <span class="menu3">
+      <div class="card" style="width: 314px;">
+        <div class="konten">
+          <img class="card-img-top" title="Link to project" src="assets/img/NGC.jpg" alt="Card image cap">
+        </div>
+        <div class="row">
+          <div class="col-lg-7 mt-2">
+            <span>
+              <a href="#" class="card-text">River Plate</a>
+              <p class="owners">Multiple owners<i class="fas fa-caret-down ml-2"></i></p>
+            </span>
+          </div>
+          <div class="col-lg-5 mt-2">
+            <span class="d-flex justify-content-end">
+              <span>
+                <i class="fas fa-thumbs-up fa-xs"></i>
+                <span class="desk">254</span>
+              </span>
+              <span class="ml-3">
+                <i class="fas fa-eye fa-xs"></i>
+                <span class="desk">1k</span>
+              </span>
+            </span>
+          </div>
+          <div class="overlay">
+            <a href="" class="icon">
+              <button class="btn btn-sm tomOver"><i class="fas fa-save mr-2"></i>Save</button>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </span>
+    <!-- akhirContent3 -->
+
+    <!-- content4 -->
+    <span class="menu4">
+      <div class="card" style="width: 314px;">
+        <div class="konten">
+          <img class="card-img-top" title="Link to project" src="assets/img/NGC.jpg" alt="Card image cap">
+        </div>
+        <div class="row">
+          <div class="col-lg-7 mt-2">
+            <span>
+              <a href="#" class="card-text">River Plate</a>
+              <p class="owners">Multiple owners<i class="fas fa-caret-down ml-2"></i></p>
+            </span>
+          </div>
+          <div class="col-lg-5 mt-2">
+            <span class="d-flex justify-content-end">
+              <span>
+                <i class="fas fa-thumbs-up fa-xs"></i>
+                <span class="desk">254</span>
+              </span>
+              <span class="ml-3">
+                <i class="fas fa-eye fa-xs"></i>
+                <span class="desk">1k</span>
+              </span>
+            </span>
+          </div>
+          <div class="overlay">
+            <a href="" class="icon">
+              <button class="btn btn-sm tomOver"><i class="fas fa-save mr-2"></i>Save</button>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </span>
+    <!-- akhirContent4 -->
+
+  </div>
 
 
   <script type="text/javascript">
