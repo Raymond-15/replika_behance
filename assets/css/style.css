@@ -38,24 +38,6 @@
   position: relative;
 }
 
-.tomSearch-active {
-  top: 10px;
-  background-color: rgb(17, 17, 17);
-  border: none;
-  border-radius: 50px;
-  height: 31px;
-  padding: 1px 12px;
-  text-decoration: none;
-  text-align: center;
-  text-decoration: none;
-  color: rgb(255, 255, 255);
-  font-weight: bold;
-  display: inline-block;
-  font-size: 14px;
-  /* height: 12px; */
-  position: relative;
-}
-
 .lengkung {
   border-radius: 50px;
   font-weight: bolder;
@@ -93,14 +75,24 @@
   color: rgb(163, 163, 163);
 }
 
+.pencarian form {
+  position: fixed;
+  top: 80px;
+  border: 1px solid rgb(110, 110, 110);
+  height: 53px;
+  width: 440px;
+  left: 18px;
+  border-radius: 50px;
+  background-color: rgb(255, 255, 255);
+}
+
 input[type="text"] {
-  /* width: auto; */
-  /* box-sizing: border-box; */
+  width: 240px;
+  height: 51px;
   border: 0px solid rgb(255, 255, 255);
   margin-left: 10px;
   font-size: 16px;
   background-color: white;
-  /* background-image: url("../img/icon/searchmagnifi.png"); */
   background-position: 10px 10px;
   background-repeat: no-repeat;
   padding: 6px 5px 6px 5px;
@@ -112,12 +104,6 @@ input[type="text"] {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 20px;
   font-weight: bolder;
-}
-
-.sorting {
-  position: fixed;
-  top: 125px;
-  left: 24px;
 }
 
 .jumbotron {
@@ -134,27 +120,8 @@ input[type="text"] {
   border-color: rgb(0, 0, 0);
 }
 
-.item2 {
-  grid-area: menu;
-}
-
-.grid-container {
-  margin-top: 24px;
-  display: grid;
-  grid-gap: 20px;
-  grid-template-areas: "menu1 menu1 menu1 menu2 menu2 menu2 menu3 menu3 menu3 menu4 menu4 menu4";
-  padding: 10px;
-}
-
-.card {
-  top: 200px;
-  left: 12px;
-}
-
-.card-img-top {
-  height: 244px;
-  width: 311px;
-  border-radius: 5px;
+.isi-konten:hover .overlay {
+  opacity: 1;
 }
 
 .card-text {
@@ -163,31 +130,8 @@ input[type="text"] {
   font-size: 14px;
 }
 
-.desk {
-  font-weight: 550;
-  font-size: 11px;
-}
-
-.owners {
-  font-size: 12px;
-}
-
-.overlay {
-  position: absolute;
-  border-radius: 5px;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 79%;
-  width: 99%;
-  opacity: 0;
-  transition: 0.3s ease;
-  background-color: rgba(0, 0, 0, 0.192);
-}
-
-.isi-konten:hover .overlay {
-  opacity: 1;
+.card-text:hover {
+  color: #000;
 }
 
 .icon {
@@ -211,10 +155,6 @@ input[type="text"] {
   font-weight: 700;
   color: white;
   font-size: 13px;
-}
-
-nav.fixed-bottom {
-  line-height: 10px;
 }
 
 @media (min-width: 992px) {
@@ -241,39 +181,234 @@ nav.fixed-bottom {
     background-color: rgb(255, 255, 255);
   }
 
-  .aktif {
-    background-color: black;
-    color: white;
-  }
-}
-
-@media (max-width: 576px) {
-  .pencarian form {
-    position: fixed;
-    top: 75px;
-    border: 1px solid rgb(110, 110, 110);
-    height: 53px;
-    width: 400px;
-    left: 18px;
-    border-radius: 50px;
-    background-color: rgb(255, 255, 255);
-  }
   input[type="text"] {
     width: 250px;
     box-sizing: border-box;
-    border: 2px solid #ccc;
-    border-radius: 50px 5px 5px 50px;
+    border: 0px solid #ccc;
     font-size: 16px;
     background-color: white;
-    /* background-image: url("../img/icon/searchmagnifi.png"); */
     background-position: 10px 10px;
     background-repeat: no-repeat;
-    padding: 6px 14px 6px 24px;
+    padding: 6px 5px 6px 5px;
     -webkit-transition: width 0.4s ease-in-out;
     transition: width 0.4s ease-in-out;
   }
 
-  /* nav.logo {
-    src: url("assets/img/behance-logo-b&w.png");
-  } */
+  .tomSearch-active {
+    top: 10px;
+    background-color: rgb(17, 17, 17);
+    border: none;
+    border-radius: 50px;
+    height: 31px;
+    padding: 1px 12px;
+    text-decoration: none;
+    text-align: center;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    display: inline-block;
+    font-size: 14px;
+    /* height: 12px; */
+    position: relative;
+  }
+
+  .ikon-drop {
+    display: none;
+  }
+
+  .sorting {
+    position: fixed;
+    top: 125px;
+    left: 24px;
+  }
+
+  .aktif {
+    background-color: black;
+    color: white;
+  }
+
+  .grid-container {
+    margin-top: 24px;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-areas: "menu1 menu1 menu1 menu2 menu2 menu2 menu3 menu3 menu3 menu4 menu4 menu4";
+    padding: 10px;
+  }
+
+  .item2 {
+    grid-area: menu;
+  }
+
+  .card {
+    top: 200px;
+    left: 12px;
+  }
+
+  .card-img-top {
+    height: 244px;
+    width: 311px;
+    border-radius: 5px;
+  }
+
+  .card-text {
+    color: #000;
+    font-weight: bold;
+    font-size: 14px;
+  }
+
+  .desk {
+    font-weight: 550;
+    font-size: 11px;
+  }
+
+  .owners {
+    margin-top: -6px;
+    font-size: 12px;
+  }
+  .icon {
+    color: white;
+    font-size: 100px;
+    position: absolute;
+    top: 8%;
+    left: 16%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: left;
+  }
+
+  .overlay {
+    position: absolute;
+    border-radius: 5px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 81%;
+    width: 99%;
+    opacity: 0;
+    transition: 0.3s ease;
+    background-color: rgba(0, 0, 0, 0.192);
+  }
+
+  .tomOver {
+    border-radius: 50px;
+    background-color: rgba(0, 0, 0, 0.397);
+    font-weight: 700;
+    color: white;
+    font-size: 13px;
+  }
+
+  .tomOver:hover {
+    background-color: rgba(0, 0, 0, 0.596);
+  }
+}
+
+@media (max-width: 992px) {
+  .sorting {
+    display: none;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .tomSearch-active {
+    top: 1px;
+    left: -10px;
+    background-color: rgba(17, 17, 17, 0);
+    border: none;
+    border-radius: 5px 50px 50px 5px;
+    height: 49px;
+    width: 130px;
+    padding: 1px 30px 1px 1px;
+    text-decoration: none;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    display: inline-block;
+    font-size: 14px;
+    position: relative;
+  }
+
+  .grid-container {
+    margin-top: 24px;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-areas: "menu1 menu1 menu1 menu2 menu2 menu2 menu3 menu3 menu3 menu4 menu4 menu4";
+    padding: 10px;
+  }
+
+  .item2 {
+    grid-area: menu;
+  }
+
+  .card {
+    top: 140px;
+    left: 25px;
+  }
+
+  .card-img-top {
+    height: 316px;
+    width: 414px;
+    border-radius: 5px;
+  }
+
+  .card-text {
+    color: #000;
+    font-weight: bold;
+    font-size: 14px;
+  }
+
+  .icon {
+    color: white;
+    font-size: 100px;
+    position: absolute;
+    top: 6%;
+    left: 11.5%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: left;
+  }
+
+  .tomOver {
+    border-radius: 50px;
+    background-color: rgba(0, 0, 0, 0.397);
+    font-weight: 700;
+    color: white;
+    font-size: 13px;
+  }
+
+  .tomOver:hover {
+    background-color: rgba(0, 0, 0, 0.596);
+  }
+
+  .desk {
+    font-weight: 600;
+    font-size: 11px;
+  }
+
+  .view-desk {
+    left: 100px;
+  }
+
+  .owners-desk {
+    left: 3px;
+  }
+
+  .owners {
+    margin-top: -6px;
+    font-size: 12px;
+  }
+
+  .overlay {
+    position: absolute;
+    border-radius: 5px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 85%;
+    width: 132%;
+    opacity: 0;
+    transition: 0.3s ease;
+    background-color: rgba(0, 0, 0, 0.192);
+  }
 }
