@@ -61,18 +61,28 @@
           <form class="input-group">
             <i class="fas fa-search fa-lg icon-cari"></i>
             <input id="search" type="text" class="col-lg border-right" name="search" placeholder="Search the creative world at work" />
-            <button class="btn tomSearch-active ml-3" type="button">
+            <button class="btn tomSearch-active ml-3" data-toggle="collapse" data-target="#cari2" type="button">
               Projects
               <span class="ikon-drop">
                 <i class="dropdown-toggle"></i>
               </span>
             </button>
 
-            <div></div>
-            <button class="btn tomSearch ml-2" type="button">Images</button>
-            <button class="btn tomSearch ml-2" type="button">Prototypes</button>
-            <button class="btn tomSearch ml-2" type="button">People</button>
-            <button class="btn tomSearch ml-2 mr-3" type="button">Moodboards</button>
+            <div id="cari1">
+              <button class="btn tomSearch ml-2" type="button">Images</button>
+              <button class="btn tomSearch ml-2" type="button">Prototypes</button>
+              <button class="btn tomSearch ml-2" type="button">People</button>
+              <button class="btn tomSearch ml-2 mr-3" type="button">Moodboards</button>
+            </div>
+
+            <div class="collapse navbar-collapse" id="cari2">
+              <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="btn" type="button">Images</li>
+                <li class="btn" type="button">Prototypes</li>
+                <li class="btn" type="button">People</li>
+                <li class="btn" type="button">Moodboards</li>
+              </ul>
+            </div>
           </form>
         </div>
         <!-- akhir header -->
@@ -109,7 +119,9 @@
             <div class="col-7 mt-1 owners-desk">
               <span>
                 <a href="#" class="card-text">River Plate</a>
-                <p class="owners">Multiple owners<i class="fas fa-caret-down ml-2"></i></p>
+                <div class="owners">
+                  <a href="#" class="text-body">Multiple owners<i class="fas fa-caret-down ml-1"></i></a>
+                </div>
               </span>
             </div>
             <div class="col-5 mt-1 view-desk">

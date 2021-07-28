@@ -212,6 +212,10 @@ input[type="text"] {
     position: relative;
   }
 
+  #cari2 {
+    display: none;
+  }
+
   .ikon-drop {
     display: none;
   }
@@ -257,13 +261,14 @@ input[type="text"] {
   }
 
   .desk {
-    font-weight: 550;
+    font-weight: 600;
     font-size: 11px;
   }
 
   .owners {
     margin-top: -6px;
     font-size: 12px;
+    color: black;
   }
   .icon {
     color: white;
@@ -283,7 +288,7 @@ input[type="text"] {
     bottom: 0;
     left: 0;
     right: 0;
-    height: 81%;
+    height: 86%;
     width: 99%;
     opacity: 0;
     transition: 0.3s ease;
@@ -312,7 +317,7 @@ input[type="text"] {
 @media (max-width: 575.98px) {
   .tomSearch-active {
     top: 1px;
-    left: -10px;
+    left: 0px;
     background-color: rgba(17, 17, 17, 0);
     border: none;
     border-radius: 5px 50px 50px 5px;
@@ -326,6 +331,14 @@ input[type="text"] {
     display: inline-block;
     font-size: 14px;
     position: relative;
+  }
+
+  #cari1 {
+    display: none;
+  }
+
+  .ikon-drop {
+    margin-left: 44px;
   }
 
   .grid-container {
@@ -395,6 +408,7 @@ input[type="text"] {
 
   .owners {
     margin-top: -6px;
+    color: #000;
     font-size: 12px;
   }
 
@@ -405,7 +419,7 @@ input[type="text"] {
     bottom: 0;
     left: 0;
     right: 0;
-    height: 85%;
+    height: 89%;
     width: 132%;
     opacity: 0;
     transition: 0.3s ease;
