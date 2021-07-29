@@ -157,6 +157,21 @@ input[type="text"] {
   font-size: 13px;
 }
 
+.dev img {
+  position: absolute;
+  top: 6%;
+  left: 80%;
+  height: 40px;
+  width: 40px;
+}
+
+.dev img:hover {
+  top: 6%;
+  left: 79%;
+  height: 50px;
+  width: 50px;
+}
+
 @media (min-width: 992px) {
   .nav-link:hover::after {
     content: "";
