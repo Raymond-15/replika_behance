@@ -172,6 +172,27 @@ input[type="text"] {
   width: 50px;
 }
 
+.tooltipes .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  box-shadow: 5px 5px 5px grey;
+
+  /* Position the tooltip */
+  position: absolute;
+  top: 110%;
+  left: 10%;
+  z-index: 1;
+}
+.tooltipes:hover .tooltiptext {
+  visibility: visible;
+  text-decoration: none;
+}
+
 @media (min-width: 992px) {
   .nav-link:hover::after {
     content: "";
