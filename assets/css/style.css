@@ -177,7 +177,7 @@ input[type="text"] {
   width: 120px;
   background-color: rgb(255, 255, 255);
   color: rgb(0, 0, 0);
-  text-align: center;
+  text-align: left;
   border-radius: 6px;
   padding: 5px 0;
   box-shadow: 5px 5px 5px grey;
@@ -191,6 +191,11 @@ input[type="text"] {
 .tooltipes:hover .tooltiptext {
   visibility: visible;
   text-decoration: none;
+}
+
+.owner-prof {
+  width: 20%;
+  border-radius: 50px;
 }
 
 @media (min-width: 992px) {
