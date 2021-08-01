@@ -160,16 +160,16 @@ input[type="text"] {
 .dev img {
   position: absolute;
   top: 6%;
-  left: 80%;
-  height: 40px;
-  width: 40px;
+  left: 85%;
+  height: 30px;
+  width: 30px;
 }
 
 .dev img:hover {
   top: 6%;
-  left: 79%;
-  height: 50px;
-  width: 50px;
+  left: 84%;
+  height: 40px;
+  width: 40px;
 }
 
 .tooltipes .tooltiptext {
