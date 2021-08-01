@@ -172,6 +172,26 @@ input[type="text"] {
   width: 40px;
 }
 
+.feature {
+  color: grey;
+  font-size: 12px;
+  font-weight: 600;
+  margin-top: 12px;
+  margin-left: 10px;
+}
+
+.dev-tool {
+  color: rgb(0, 102, 255);
+  font-size: 12px;
+  margin-top: -10px;
+  margin-left: 10px;
+}
+
+.tooltip-atas:hover .tooltip-teks {
+  visibility: visible;
+  text-decoration: none;
+}
+
 .tooltipes .tooltiptext {
   visibility: hidden;
   width: 120px;
@@ -347,11 +367,42 @@ input[type="text"] {
   .tomOver:hover {
     background-color: rgba(0, 0, 0, 0.596);
   }
+
+  .tooltip-atas .tooltip-teks {
+    visibility: hidden;
+    width: 150px;
+    background-color: rgb(255, 255, 255);
+    text-align: left;
+    border-radius: 3px;
+    padding-top: 2px;
+    box-shadow: 2px 2px 2px rgb(31, 31, 31);
+
+    /* Position the tooltip */
+    position: absolute;
+    top: 25%;
+    left: 46%;
+    z-index: 1;
+  }
 }
 
 @media (max-width: 992px) {
   .sorting {
     display: none;
+  }
+  .tooltip-atas .tooltip-teks {
+    visibility: hidden;
+    width: 150px;
+    background-color: rgb(255, 255, 255);
+    text-align: left;
+    border-radius: 3px;
+    padding-top: 2px;
+    box-shadow: 2px 2px 2px rgb(31, 31, 31);
+
+    /* Position the tooltip */
+    position: absolute;
+    top: 20%;
+    left: 57%;
+    z-index: 1;
   }
 }
 
@@ -386,7 +437,7 @@ input[type="text"] {
     margin-top: 24px;
     display: grid;
     grid-gap: 20px;
-    grid-template-areas: "menu1 menu1 menu1 menu2 menu2 menu2 menu3 menu3 menu3 menu4 menu4 menu4";
+    grid-template-areas: "menu1";
     padding: 10px;
   }
 
